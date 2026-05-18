@@ -12,8 +12,7 @@ export class Radio {
     ring(): Sound {
         const sound = new Sound(this.logger);
 
-        sound.name = 'ringing';
-        sound.play();
+        sound.play('ringing');
 
         return sound;
     }

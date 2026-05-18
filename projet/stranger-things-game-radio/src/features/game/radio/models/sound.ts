@@ -7,9 +7,14 @@ export class Sound {
         this.logger = logger;
     }
 
-    name = 'default';
+    #name = 'default';
 
-    play(): void {
-        this.logger.log(`Playing sound: ${this.name}`, 'info');
+    get name(): string {
+        return this.#name;
+    }
+
+    play(soundName: string): void {
+        this.#name = soundName;
+        this.logger.log(`Playing sound: ${soundName}`, 'info');
     }
 }

@@ -8,10 +8,16 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "test": "vitest",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "test:bdd": "node --import tsx/esm ./node_modules/@cucumber/cucumber/bin/cucumber.js"
   },
   "devDependencies": {
+    "@cucumber/cucumber": "^12.9.0",
+    "@types/chai": "^5.2.3",
+    "@types/node": "^25.9.0",
     "@vitest/coverage-v8": "^4.1.6",
+    "chai": "^6.2.2",
+    "tsx": "^4.22.2",
     "typescript": "~6.0.2",
     "vite": "^8.0.12",
     "vitest": "^4.1.6"
