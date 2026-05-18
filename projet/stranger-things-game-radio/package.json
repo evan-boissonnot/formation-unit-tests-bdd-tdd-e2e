@@ -9,10 +9,12 @@
     "preview": "vite preview",
     "test": "vitest",
     "coverage": "vitest run --coverage",
-    "test:bdd": "node --import tsx/esm ./node_modules/@cucumber/cucumber/bin/cucumber.js"
+    "test:bdd": "node --import tsx/esm ./node_modules/@cucumber/cucumber/bin/cucumber.js",
+    "e2e": "npx playwright test"
   },
   "devDependencies": {
     "@cucumber/cucumber": "^12.9.0",
+    "@playwright/test": "^1.60.0",
     "@types/chai": "^5.2.3",
     "@types/node": "^25.9.0",
     "@vitest/coverage-v8": "^4.1.6",
